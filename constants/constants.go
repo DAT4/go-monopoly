@@ -6,6 +6,6 @@ const (
 )
 
 const (
-	TileSize = 16
-	TileXNum = 25
+	TileSize = 32
+	TileXNum = 12
 )

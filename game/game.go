@@ -39,7 +39,7 @@ func (g *Game) Update() error {
 }
 
 func (g *Game) Draw(screen *ebiten.Image) {
-	screen.Fill(colornames.Green)
+	screen.Fill(colornames.Seashell)
 	g.drawBoard(screen)
 	g.drawPlayers(screen)
 }

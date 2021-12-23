@@ -34,10 +34,10 @@ func MakeMatrix(fields []Field, margin int) (out [][]*Tile) {
 		for j := 0; j <= length; j++ {
 			if ((i == side+margin || i == margin) && (j <= side+margin && j >= margin)) ||
 				((j == side+margin || j == margin) && (i <= side+margin && i >= margin)) {
-				out[i] = append(out[i], NewTile(colornames.Blue, j, i, fields[k]))
+				out[i] = append(out[i], NewTile(fields[k].Color(), j, i, fields[k]))
 				k++
 			} else {
-				out[i] = append(out[i], NewTile(colornames.Green, j, i, nil))
+				out[i] = append(out[i], NewTile(colornames.Seagreen, j, i, nil))
 			}
 		}
 	}
